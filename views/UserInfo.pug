@@ -1,0 +1,20 @@
+-
+  let user = {
+    "avatarImage": "mayuravatar.jpg",
+    "name": "Mayur Sharma",
+    "role": "Windows Admin",
+    "email": "mayur.sss@gmail.com",
+    "phone": "(888) 888-8888"
+    }
+    //- console.log(user)
+//- img#avatarimg.style-scope.yt-img-shadow(alt='' height='32' width='32' src='https://yt3.ggpht.com/a-/AAuE7mB1RYW7A1wqLAdp7HFbylY8TBrLRVw5TVEbzw=s88-c-k-c0x00ffffff-no-rj-mo')
+img#avatarimg.h-16.w-16.rounded-full.mx-auto(class="md:h-24 md:w-24 md:mx-0 md:mr-6" src="/img/" + user.avatarImage)
+div#userinfo.container.mt-5.mx-auto.px-2
+  div.bg-gray-200.rounded-lg.p-6.border-l-8.border-red-500.shadow-md(class='md:flex')
+    //- avtar and other infor should be dynamic
+    //- img.h-16.w-16.rounded-full.mx-auto(class="md:h-24 md:w-24 md:mx-0 md:mr-6" src="/img/" + user.avatarImage)
+    div.text-center(class="md:text-left")
+      h2.text-lg #{user.name}
+      div.text-purple-600 #{user.role}
+      div.text-gray-600 #{user.email}
+      div.text-gray-600 #{user.phone}
